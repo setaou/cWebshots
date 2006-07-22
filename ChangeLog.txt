@@ -1,0 +1,24 @@
+When		Who			What
+------------------------------------------------------------------------------
+01-02-06	Setaou		Changed the type of the picture ID from int to string in all the classes.
+06-02-06	Setaou		Changed the interface for almost all the functions of the classes.
+						Improved the support of the thumbnail in cWebshotsPicture.
+						Fixed a memory leak in cWebshotsCollection::loadWBCFile.
+						Added support for thumbnails in WBC files.
+07-02-06	Setaou		Added new constructors to cWebshotsPicture et cWebshotsCollection.
+						Changed cWebshotsPicture data pointers and size to "unsigned char *" and "unsigned long" respectively.
+						Changed cWebshotsPicture::AdditionDate to long.
+						Added a destructor to cWebshotsCollection (fixes an ugly memory leak !).
+22-04-06	Setaou		Changed some more Index variables types from /int/ to /unsigned int/.
+06-05-06	Setaou		Renamed cWebshotsPicture to Picture.
+						        cWebshotsCollection to Collection.
+						        cWebshotsTXT to TXT.
+						Changed int2str to long2str.
+						Modified functions that deal with paths so that the separator is now "/" instead of "\".
+						If a picture has no /ID/, one is generated randomly.
+						If a picture has no /title/ or /original filename/, the file name is used intead.
+						The /Daily Date/ was not handled correctly.
+13-07-06	Setaou		Added MetaData and Datum classes to handle pictures and collections metadata.
+16-07-06	Setaou		Added the new metadata system to Picture and Collection. Still not removed the old system.
+17-06-06	Setaou		Removed the old metadata system in Picture and Collection
+22-06-06	Setaou		Split cWebshots.h into several header files, one for each .cpp

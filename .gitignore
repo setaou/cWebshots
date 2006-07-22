@@ -1,0 +1,9 @@
+bin
+obj
+Makefile.win
+.cvsignore
+cWebshots.sln
+cWebshots.ncb
+cWebshots.vcproj*
+cWebshots.suo
+bin
